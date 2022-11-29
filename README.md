@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+## Why is React a library and angular is a framework?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React is a javascript library beacause it is lightweight. React is a library for building user interface. React came 2011 by a facebook developer Jordan.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+framework is heavy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+features of react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+it uses virtue dom: alightweight representation of the dom (it's cheap, and light)
 
-### `npm run build`
+Angular uses the real dom (expensive,and heavy)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Angular is built on typescript (no room for javascript despite been a javascript framework)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+it support server side rendering
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+it uses components and the component are reusable
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to start a react project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npx  create-react-app react-class
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+or
 
-## Learn More
+yarn create-react-app react-class
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+cd into the newly created fiolder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+JSs = Javascript xml which consist of both the html and the javascript
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+React works in component (component is a function that returns a jss)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## State and Props
 
-### Advanced Configuration
+What is state? State is an object that can change over time (they are mutable)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+What is Props? Props are immutable i.e they can't be change.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is what you do to manipulate or change a state in react
+
+- useState: This is the most common used hook in react (easy to understand, use and manipulate)
+
+- useReducer:
+
+- useEffect: 2nd most used hook in react
+
+- useRef:
+
+- useContext
+
+
+
+type rafce
+
+
+
+The disadvantage of fragement in react is that you cannot style it
+
+
+
+To render a component in react, you apply a forward slash to the name of the contennt having import it
+
+
+
+onClick is the most common eventHandler in react
+
+
+
+
+## How to get data from a user
+
+We make use of onChange eventhandler
+
+
+
+axios is a package used to
+
+
+
+useEffect have array of dependencies
+
+
+
+ensure to giver your data a key (keyword key) having an index
+
+
+
+fake snapshot: The DOM inability to recognise a data, hence you should always give your data a key to avoid fake snapshot
+
+
+
+Whatwill you use to control side effect
+
+component did mount
+
+
+
+passing data from parent to child is called "props". Prpos are immutable (you can't change the data inside it)
+
+
+
+REACT INTERVIEW QUESTIONS
+
+what is hook
+
+whats is state
+
+props
+
+useState
+
+sideeffect
+
+
+
+Props Drilling: When you have multiple props in your application
+
+
+
+contectAPI & Redox are used for state management to prevent props drilling
+
+
+
+Always use useEffect anytime you're making an http request
+
+createContext is used to create context provider
+
+
+
+With context you can move any data in your app
+
+
+
+to configure our route, we need react router dom to navigate between two pages been configured.
+
+add it to your dependnecies yarn add react-router-dom
